@@ -1,10 +1,10 @@
-/*svg sprite*/
+/*svg sprite--not sure I need this now
 
-.icon {
+/* .icon {
   width: 50px;
   height: 50px;
   margin: .5em;
-}
+} */
 
 /* doc styles*/
 
@@ -25,11 +25,13 @@ color: var(--main-color);
 :root{
  --main-color: #212121;
  --sub-text-color:#757575;
+ --icon-link-fill-color: #AFB1B8;
  --sub-font-size: 16px;
  --main-background-color:#FFFFFF;
  --focus-hover-background-color: #2196F3;
  --focus-hover-color-button:#FFFFFF;
  --focus-hover-color-text:#2196F3;
+ --footer-icon-link-background: gba(255, 255, 255, 0.1);
 }
 
 body{
@@ -357,6 +359,18 @@ margin-right: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--sub-text-color);
+  margin-bottom:16px;
+}
+
+.socials-list{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:0;
+}
+
+.socials-link{
+  fill:#AFB1B8
 }
 
 .filters{
