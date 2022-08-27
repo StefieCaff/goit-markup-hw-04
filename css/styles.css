@@ -149,6 +149,10 @@ margin-right: 50px;
   letter-spacing: 0.02em;
 }
 
+.header-icon{
+  fill: current-color;
+}
+
 .current-link,
 .navbar-contact-link:focus, 
 .header-contact-link:focus,
