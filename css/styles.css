@@ -152,15 +152,23 @@ margin-right: 50px;
   letter-spacing: 0.02em;
 }
 
+.header-icon-link{
+  display: inline-block;
+  color:var(--sub-text-color);
+  margin-right: 10px;
+}
+
 .header-icon{
-  fill: current-color;
+  display: inline-block;
+  fill:currentColor;
 }
 
 .current-link,
 .navbar-contact-link:focus, 
 .header-contact-link:focus,
 .navbar-contact-link:hover,
-.header-contact-link:hover {
+.header-contact-link:hover,
+.header-icon-link:hover {
   color: var(--focus-hover-color-text);
 }
 
