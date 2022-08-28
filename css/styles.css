@@ -28,6 +28,7 @@ color: var(--main-color);
  --icon-link-fill-color: #AFB1B8;
  --sub-font-size: 16px;
  --main-background-color:#FFFFFF;
+ --sub-background-color: #F5F4FA;
  --focus-hover-background-color: #2196F3;
  --focus-hover-color-button:#FFFFFF;
  --focus-hover-color-text:#2196F3;
@@ -256,7 +257,7 @@ margin-right: 50px;
   align-items: center;
   width: 270px;
   height: 120px;
-  background: #F5F4FA;
+  background: var(--sub-background-color);
   border-radius: 4px;
   margin-bottom:30px;
   
@@ -340,7 +341,7 @@ margin-right: 50px;
 }
 
 .section-team{
-  background-color: #F5F4FA;
+  background-color: var(--sub-background-color);
 }
 
 .team-name{
@@ -370,7 +371,35 @@ margin-right: 50px;
 }
 
 .socials-link{
-  fill:#AFB1B8
+color: var(--icon-link-fill-color);
+}
+
+.socials-icons{
+  fill:currentColor;
+}
+
+.clients-list{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.clients-icon-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+      height: 92px;
+    border: 1px solid var(--icon-link-fill-color);
+    border-radius: 4px;
+}
+
+.clients-link{
+  color: var(--icon-link-fill-color);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 .filters{
