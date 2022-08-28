@@ -181,6 +181,12 @@ margin-right: 50px;
   background-color: #188CE8;
 }
 
+.socials-link:focus,
+.socials-link:hover{
+  background-color: var(--focus-hover-background-color);
+  color: var(--focus-hover-color-button)
+}
+
 .clients-icon:focus,
 .clients-icon:hover{
   color: var(--focus-hover-color-text);
@@ -390,7 +396,15 @@ margin-right: 50px;
 }
 
 .socials-link{
-color: var(--icon-link-fill-color);
+  display:inline-flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-size: contain; 
+  background-position: center;
+  padding:12px;
+  background-color: var(--main-background-color);
+  color: var(--icon-link-fill-color);
 }
 
 .socials-icons{
