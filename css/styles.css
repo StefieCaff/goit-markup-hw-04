@@ -8,10 +8,6 @@
 
 /* doc styles*/
 
-ul{
-  list-style-type: none;
-}
-
 :focus{
   outline: none;
 }
