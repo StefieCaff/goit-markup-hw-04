@@ -13,7 +13,6 @@ ul{
 }
 
 a{
-text-decoration: none;
 color: var(--main-color);
 }
 
@@ -147,6 +146,7 @@ margin-right: 50px;
 
 .navbar-contact-link{
   font-weight: 500;
+  font-size:14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
@@ -154,13 +154,13 @@ margin-right: 50px;
 .header-icon-link{
   display: inline-block;
   color:var(--sub-color);
-  margin-right: 10px;
   cursor:pointer;
 }
 
 .header-icon{
   display: inline-block;
   fill:currentColor;
+  margin-right: 10px
 }
 
 .current-link,
@@ -202,7 +202,8 @@ color: var(--accent-color);
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.footer-socials-link:hover{
+.footer-socials-link:hover,
+.footer-socials-link:focus{
   background-color: var(--dark-accent-background-color);
 }
 
@@ -216,6 +217,7 @@ color: var(--accent-color);
 .header-contact-link{
   color: var(--sub-color);
   font-weight:500;
+  font-size:14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
@@ -388,21 +390,24 @@ color: var(--accent-color);
 
 .socials-list{
   display:flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding:0;
 }
 
 .socials-link{
-  display:inline-flex;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background-size: contain; 
-  background-position: center;
-  padding:12px;
   background-color: var(--main-background-color);
   color: var(--icon-color);
+}
+
+.socials-item:not(:last-child){
+  margin-right: 10px;
 }
 
 .socials-icons{
@@ -534,8 +539,7 @@ color: var(--accent-color);
 }
 
 .footer-icon-box{
-  display: flex;
-  padding-left:70px;
+  margin-left:70px;
 }
 
 .footer-header{
@@ -545,30 +549,33 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-accent-background-color);
-  padding-top:15px;
-  padding-bottom: 20px;  
+  margin-top: 15px; 
 }
 
-.footer-socials-list{
+.footer-socials-list {
   display: flex;
-  flex-direction: column;
-  
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
 }
 
 .footer-socials-item{
-  display: inline-flex;
+  display: flex;
 }
 
 .footer-socials-link {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background-size: contain;
-  background-position: center;
-  padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   color:#FFFFFF;
+} 
+
+.footer-socials-item:not(:last-child){
+  margin-right:10px;
 }
 
 .footer-socials-icon{
