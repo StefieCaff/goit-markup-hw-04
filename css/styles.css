@@ -148,13 +148,13 @@ margin-right: 50px;
 }
 
 .header-icon-link{
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color:var(--sub-color);
   cursor:pointer;
 }
 
 .header-icon{
-  display: inline-block;
   fill:currentColor;
   margin-right: 10px
 }
@@ -180,14 +180,11 @@ color: var(--accent-color);
   color: var(--light-accent-background-color)
 }
 
-.clients-icon:focus,
-.clients-icon:hover {
-  color: var(--accent-color);
-}
 
-.clients-box:focus,
-.clients-box:hover {
+.clients-linkfocus,
+.clients-link:hover {
   border: 1px solid #2196F3;
+  color: var(--accent-color);
 }
 
 .filter-button:focus,
@@ -410,7 +407,13 @@ color: var(--accent-color);
   fill:currentColor;
 }
 
-.clients-box{
+.clients-list{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,21 +421,14 @@ color: var(--accent-color);
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-}
-
-.clients-list{
-  display:flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.clients-link{
-  display: inline-block;
   color:var(--icon-color)
 }
 
+.clients-item:not(:last-child){
+  margin-right: 30px;
+}
+
 .clients-icon {
-  display:flex;
   fill: currentColor;
 }
 
@@ -453,13 +449,13 @@ color: var(--accent-color);
   margin-top:-30px;
 }
   
-  .projects-item{
+.projects-item{
     margin-left: 30px;
     margin-top: 30px;
     background: #FFFFFF;
 }
 
- .footer-projects{
+.footer-projects{
    display: flex;
    flex-direction: column;
    padding:20px 24px;
