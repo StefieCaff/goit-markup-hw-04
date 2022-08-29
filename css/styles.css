@@ -12,10 +12,6 @@ ul{
   list-style-type: none;
 }
 
-a{
-color: var(--main-color);
-}
-
 :focus{
   outline: none;
 }
@@ -508,8 +504,12 @@ color: var(--accent-color);
   color: var(--sub-color);
 }
 
+.projects-link{
+  display:block;
+}
+
+.projects-link:focus,
 .projects-link:hover{
-  display:inline-block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
